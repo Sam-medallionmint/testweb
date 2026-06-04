@@ -1,6 +1,15 @@
-<!DOCTYPE html>
-<html>
-<body style="background-color: blue";>
-<div></div>
-</body>
-</html>
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>myimage</title><meta itemprop="name" content="myimage"><meta name="twitter:title" content="myimage"><meta property="og:title" content="myimage"><meta property="og:site_name" content="myimage"><meta name="description" content=""><meta itemprop="description" content=""><meta property="og:description" content=""><meta name="twitter:description" content=""><script crossorigin="anonymous" src="./external/runtime/runtime.js"></script><script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="face, slam"></script></head><body><script>function loadMyBundle() {
+      console.log('✅ 8th Wall Ready. Loading the project...');
+      const script = document.createElement('script');
+      script.src = "bundle.js";
+      document.body.appendChild(script);
+    }
+
+
+    if (window.XR8) {
+      // If XR8 is already loaded the project continues
+      loadMyBundle();
+    } else {
+      // If not then it waits for 'xrloaded'
+      window.addEventListener('xrloaded', loadMyBundle);
+    }</script></body></html>
