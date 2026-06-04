@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 458,
+    "width": 3000,
+    "height": 4000,
+    "isRotated": false,
+    "originalWidth": 4000,
+    "originalHeight": 4000
+  },
+  "imagePath": "image-targets/GG_luminance.png",
+  "metadata": null,
+  "name": "GG",
+  "resources": {
+    "originalImage": "GG_original.png",
+    "croppedImage": "GG_cropped.png",
+    "thumbnailImage": "GG_thumbnail.png",
+    "luminanceImage": "GG_luminance.png"
+  },
+  "created": 1780605634460,
+  "updated": 1780605671165
+}
